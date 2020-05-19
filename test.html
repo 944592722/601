@@ -6,6 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>你好</h1>
+    <ul id="con">
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
 </body>
+<script>
+    var x=document.getElementById("con");
+    x.addEventListener("click",function(){
+        alert(this.value)
+        var li=document.createElement("li")
+        x.appendChild(li)
+    })
+</script>
 </html>
